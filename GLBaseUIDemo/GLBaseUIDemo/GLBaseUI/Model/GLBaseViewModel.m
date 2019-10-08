@@ -24,14 +24,12 @@
     return self;
 }
 
-- (void)heightChanged {
-    self.height = 0;
-}
-
 - (NSString *)reuseIdentifier {
-    return self.defaultReuseIdentifier;    //  默认复用标识: 为本身类名后面"ViewModel" 替换为"Cell" 的 cell标识
+    // 默认复用标识: 为本身类名后面"ViewModel" 替换为"Cell" 的 cell标识
+    return self.defaultReuseIdentifier;
 }
 
+#pragma mark - private
 - (NSString *)randomReuseIdentifier {
     if(!_randomReuseIdentifier) {
         _randomReuseIdentifier = [NSString stringWithFormat:@"%u%@",arc4random()%10000000, self.defaultReuseIdentifier];
@@ -50,24 +48,8 @@
     return _defaultReuseIdentifier;
 }
 
-
-- (Class)reuseViewClass {
-    return nil;
-}
-
-- (NSIndexPath *)indexPathWithCollectionview:(UICollectionView *)collectionview {
-    if(!_cell) {
-        return nil;
-    }
-    return [collectionview indexPathForCell:_cell];
-}
-
 - (void)setWidth:(CGFloat)width {
     _width = width;
-}
-
-- (void)setupCell:(UICollectionViewCell *)collectionviewCell {
-    self->_cell = collectionviewCell;
 }
 
 @end

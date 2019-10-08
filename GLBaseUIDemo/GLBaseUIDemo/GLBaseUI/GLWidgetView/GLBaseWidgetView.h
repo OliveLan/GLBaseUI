@@ -58,6 +58,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addRefreshFooterWithBlock:(GLRefreshingBlock)refreshing;
 
 /**
+ 根据数据源刷新界面
+ */
+- (void)reloadDataSource;
+
+/**
  手动调用刷新
  */
 - (void)beginRefreshing;

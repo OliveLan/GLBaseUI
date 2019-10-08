@@ -10,4 +10,16 @@
 
 @implementation GLCollectionReusableViewModel
 
+- (CGFloat)width {
+    return 0.0001;
+}
+
+- (CGFloat)height {
+    return 0.0001;
+}
+
+- (NSString *)reuseIdentifier {
+    return @"GLCollectionReusableView";
+}
+
 @end

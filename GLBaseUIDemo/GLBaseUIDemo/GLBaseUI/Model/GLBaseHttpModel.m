@@ -8,6 +8,16 @@
 
 #import "GLBaseHttpModel.h"
 
+@interface GLBaseHttpModel ()
+
+@property (nonatomic, strong) id resultData;
+
+@end
+
 @implementation GLBaseHttpModel
+
+- (void)request {
+    
+}
 
 @end

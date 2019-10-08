@@ -31,17 +31,41 @@ typedef void(^GLReqFailure)( id error);
  */
 @interface GLBaseHttpModel : NSObject
 
-
+/**
+ 数据请求成功回调
+ */
 @property (nonatomic, copy) GLReqSuccess requestSuccessBlock;
+
+/**
+ 数据请求失败回调
+ */
 @property (nonatomic, copy) GLReqFailure requestErrorBlock;
 
-@property (nonatomic, strong) id resultData;
-@property (nonatomic, strong) NSArray *list;
-@property (nonatomic, assign) REQUEST_STATUS requestStatus;
-@property (nonatomic, assign) REQUEST_TYPE requestType;
-@property (nonatomic, strong) NSString *host;
-@property (nonatomic, assign) BOOL doNotHandelError;            // 若为YES，不自动处理异常toast
+/**
+ 请求结果
+ */
+@property (nonatomic, readonly) id resultData;
 
+/**
+ 请求结果：列表数据
+ */
+@property (nonatomic, readonly) NSArray *list;
+
+/**
+ 请求状态
+ */
+@property (nonatomic, assign) REQUEST_STATUS requestStatus;
+
+/**
+ 请求类型
+ (下拉刷新、上拉加载)
+ */
+@property (nonatomic, assign) REQUEST_TYPE requestType;
+
+/**
+ 项目网络请求基类
+ 复写后，需对该值赋值。
+ */
 @property (nonatomic, strong) id baseNetwork;
 
 /**

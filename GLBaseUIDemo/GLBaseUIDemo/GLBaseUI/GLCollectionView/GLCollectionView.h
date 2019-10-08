@@ -82,7 +82,7 @@ typedef void(^DidSelectedHeaderBlock)(NSInteger index);
 
 + (instancetype)createWithFlowLayout;
 + (instancetype)createWithLayout:(UICollectionViewLayout *)layout;
-+ (instancetype)createFlowLayoutWithDirection:(BOOL)isHorizontal;
++ (instancetype)createFlowLayoutWithDirection:(BOOL)isHorizontal scrollAnimation:(BOOL)scrollAnimation;
 
 @end
 

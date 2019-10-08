@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat   minimumInteritemSpacing;    // item横向间距
 @property (nonatomic, assign) CGFloat   minimumLineSpacing;         // item纵向间距
 @property (nonatomic, assign) UIEdgeInsets sectionInset;            // section边距
-@property (nonatomic, strong) DKColorPicker   sectionBgColor;       // 每个section的背景色
+@property (nonatomic, strong) UIColor   *sectionBgColor;            // 每个section的背景色
 
 @end
 
