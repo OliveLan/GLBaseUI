@@ -8,6 +8,12 @@
 
 #import "GLBaseWidgetView.h"
 
+@interface GLBaseWidgetView ()
+
+@property (nonatomic, assign) BOOL isHorizontal;
+
+@end
+
 @implementation GLBaseWidgetView
 
 /*

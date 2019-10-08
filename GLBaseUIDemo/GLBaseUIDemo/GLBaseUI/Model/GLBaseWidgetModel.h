@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class GLBaseViewModel, GLCollectionReusableViewModel, GLBaseWidgetView;
+@class GLBaseViewModel, GLCollectionReusableViewModel, GLBaseWidgetView, GLBaseHttpModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -60,7 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  数据请求model
  */
-@property (nonatomic, strong) TFBaseHttpModel *baseNetwork;
+@property (nonatomic, strong) GLBaseHttpModel *baseNetwork;
 
 @end
 
