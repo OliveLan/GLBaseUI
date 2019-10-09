@@ -137,7 +137,7 @@
     return _footerDataList;
 }
 
-- (NSMutableArray<NSMutableArray<GLBaseViewModel *> *> *)cellDataList {
+- (NSMutableArray<NSArray <GLBaseViewModel *> *> *)cellDataList {
     if (!_cellDataList) {
         _cellDataList = [NSMutableArray array];
     }

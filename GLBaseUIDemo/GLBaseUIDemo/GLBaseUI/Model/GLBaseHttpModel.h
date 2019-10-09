@@ -27,7 +27,7 @@ typedef void(^GLReqFailure)( id error);
 
 /**
  网络请求模型基类
- 所有网络请求继承于该类
+ 所有网络请求可继承于该类
  */
 @interface GLBaseHttpModel : NSObject
 
@@ -49,7 +49,7 @@ typedef void(^GLReqFailure)( id error);
 /**
  请求结果：列表数据
  */
-@property (nonatomic, readonly) NSArray *list;
+@property (nonatomic, strong) NSArray *list;
 
 /**
  请求状态

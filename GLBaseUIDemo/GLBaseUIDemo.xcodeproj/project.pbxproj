@@ -40,6 +40,10 @@
 		514FCCB2234DD52B0009A5F4 /* NormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCB1234DD52B0009A5F4 /* NormalViewController.m */; };
 		514FCCB5234DD7E20009A5F4 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCB4234DD7E20009A5F4 /* BaseNavigationController.m */; };
 		514FCCB8234DD8400009A5F4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCB7234DD8400009A5F4 /* BaseViewController.m */; };
+		514FCCBE234DE2AC0009A5F4 /* NormalListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCBD234DE2AC0009A5F4 /* NormalListViewModel.m */; };
+		514FCCC1234DE4490009A5F4 /* NormalListWidgetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCC0234DE4490009A5F4 /* NormalListWidgetModel.m */; };
+		514FCCC4234DE4710009A5F4 /* NormalListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCC3234DE4710009A5F4 /* NormalListCell.m */; };
+		514FCCC7234DE8500009A5F4 /* NormalListHttpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCC6234DE8500009A5F4 /* NormalListHttpModel.m */; };
 		518A198C23420BCC00B4CE7E /* GLCollectionReusableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 518A198B23420BCC00B4CE7E /* GLCollectionReusableViewModel.m */; };
 		518A198F23420EA900B4CE7E /* GLBaseHttpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 518A198E23420EA900B4CE7E /* GLBaseHttpModel.m */; };
 /* End PBXBuildFile section */
@@ -119,6 +123,14 @@
 		514FCCB7234DD8400009A5F4 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		514FCCBA234DDA840009A5F4 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		514FCCBB234DDAA40009A5F4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		514FCCBC234DE2AC0009A5F4 /* NormalListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalListViewModel.h; sourceTree = "<group>"; };
+		514FCCBD234DE2AC0009A5F4 /* NormalListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalListViewModel.m; sourceTree = "<group>"; };
+		514FCCBF234DE4490009A5F4 /* NormalListWidgetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalListWidgetModel.h; sourceTree = "<group>"; };
+		514FCCC0234DE4490009A5F4 /* NormalListWidgetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalListWidgetModel.m; sourceTree = "<group>"; };
+		514FCCC2234DE4710009A5F4 /* NormalListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalListCell.h; sourceTree = "<group>"; };
+		514FCCC3234DE4710009A5F4 /* NormalListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalListCell.m; sourceTree = "<group>"; };
+		514FCCC5234DE8500009A5F4 /* NormalListHttpModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalListHttpModel.h; sourceTree = "<group>"; };
+		514FCCC6234DE8500009A5F4 /* NormalListHttpModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalListHttpModel.m; sourceTree = "<group>"; };
 		518A198A23420BCC00B4CE7E /* GLCollectionReusableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLCollectionReusableViewModel.h; sourceTree = "<group>"; };
 		518A198B23420BCC00B4CE7E /* GLCollectionReusableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLCollectionReusableViewModel.m; sourceTree = "<group>"; };
 		518A198D23420EA900B4CE7E /* GLBaseHttpModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLBaseHttpModel.h; sourceTree = "<group>"; };
@@ -312,6 +324,14 @@
 			children = (
 				514FCCB0234DD52B0009A5F4 /* NormalViewController.h */,
 				514FCCB1234DD52B0009A5F4 /* NormalViewController.m */,
+				514FCCBF234DE4490009A5F4 /* NormalListWidgetModel.h */,
+				514FCCC0234DE4490009A5F4 /* NormalListWidgetModel.m */,
+				514FCCBC234DE2AC0009A5F4 /* NormalListViewModel.h */,
+				514FCCBD234DE2AC0009A5F4 /* NormalListViewModel.m */,
+				514FCCC2234DE4710009A5F4 /* NormalListCell.h */,
+				514FCCC3234DE4710009A5F4 /* NormalListCell.m */,
+				514FCCC5234DE8500009A5F4 /* NormalListHttpModel.h */,
+				514FCCC6234DE8500009A5F4 /* NormalListHttpModel.m */,
 			);
 			path = NormalList;
 			sourceTree = "<group>";
@@ -394,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514FCCBE234DE2AC0009A5F4 /* NormalListViewModel.m in Sources */,
 				514FCCB5234DD7E20009A5F4 /* BaseNavigationController.m in Sources */,
 				514FCCAA234DC1D10009A5F4 /* HomeListWidgetModel.m in Sources */,
 				5121E16E234C96A300331F49 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -417,6 +438,9 @@
 				5121E171234C96A300331F49 /* MASConstraintMaker.m in Sources */,
 				514237E4230BA0920070D413 /* main.m in Sources */,
 				514237D6230BA0920070D413 /* AppDelegate.m in Sources */,
+				514FCCC1234DE4490009A5F4 /* NormalListWidgetModel.m in Sources */,
+				514FCCC4234DE4710009A5F4 /* NormalListCell.m in Sources */,
+				514FCCC7234DE8500009A5F4 /* NormalListHttpModel.m in Sources */,
 				514237FA230BA64A0070D413 /* GLBaseWidgetView.m in Sources */,
 				514FCCAD234DCE4D0009A5F4 /* HomeViewController.m in Sources */,
 				514FCCB2234DD52B0009A5F4 /* NormalViewController.m in Sources */,
