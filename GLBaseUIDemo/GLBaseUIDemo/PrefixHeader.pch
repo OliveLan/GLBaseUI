@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  GLBaseUIDemo
+//
+//  Created by GanL on 2019/10/9.
+//  Copyright © 2019 Gan Lan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "GLBaseUI.h"
+#import "Constant.h"
+
+#endif /* PrefixHeader_pch */

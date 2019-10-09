@@ -12,9 +12,9 @@
 #import "GLCollectionViewFlowLayout.h"
 #import "GLBaseWidgetModel.h"
 #import "GLBaseHttpModel.h"
-#import "Masonry.h"
 #import "GlobalDefine.h"
 #import "GLCollectionReusableViewModel.h"
+#import "UIView+GLExt.h"
 //#import "GLRefreshHeader.h"
 //#import "GLRefreshFooter.h"
 
@@ -57,13 +57,8 @@
 }
 
 - (void)initConfig {
-    assert(self.superview != nil);
-    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.superview);
-        make.left.equalTo(self.superview);
-        make.right.equalTo(self.superview);
-        make.bottom.equalTo(self.superview);
-    }];
+    [self.collectionView constraintWithEdgeZero];
+    
     self.backgroundColor = [UIColor clearColor];
     self.headerDataList = [NSMutableArray new];
     self.cellDataList = [NSMutableArray new];
@@ -87,8 +82,8 @@
 #pragma mark - 添加组件
 - (void)addWidgets:(NSArray<GLBaseWidgetModel *> *)widgets {
     for (GLBaseWidgetModel *widget in widgets) {
-        GLXAssert([widget isKindOfClass:[GLBaseWidgetModel class]], @"widget 类型 不符");
-        GLXAssert(self.widgets.count <= self.widgets.count, @"section 超出范围");
+        GLAssert([widget isKindOfClass:[GLBaseWidgetModel class]], @"widget 类型 不符");
+        GLAssert(self.widgets.count <= self.widgets.count, @"section 超出范围");
         
         if ([widget isKindOfClass:[GLBaseWidgetModel class]]) {
             widget.baseWidgetView = self;
@@ -100,8 +95,8 @@
 }
 
 - (void)insertWidget:(GLBaseWidgetModel *)widget section:(NSUInteger)section {
-    GLXAssert([widget isKindOfClass:[GLBaseWidgetModel class]], @"widget 类型 不符");
-    GLXAssert(self.widgets.count <= section, @"section 超出范围");
+    GLAssert([widget isKindOfClass:[GLBaseWidgetModel class]], @"widget 类型 不符");
+    GLAssert(self.widgets.count <= section, @"section 超出范围");
     if ([widget isKindOfClass:[GLBaseWidgetModel class]]) {
         widget.baseWidgetView = self;
         [self.widgets insertObject:widget atIndex:section];

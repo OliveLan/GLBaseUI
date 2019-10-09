@@ -11,9 +11,15 @@
 
 // Assert
 #ifdef DEBUG
-#define GLXAssert(condition , description)  if(!(condition)){ NSLog(@"%@",description); assert(0);}
+#define GLAssert(condition , description)  if(!(condition)){ NSLog(@"%@",description); assert(0);}
 #else
-#define GLXAssert(condition , description)
+#define GLAssert(condition , description)
+#endif
+
+#ifdef DEBUG
+#define QAssert(condition)  if(!(condition)){ assert(0);}
+#else
+#define QAssert(condition)
 #endif
 
 // block weakself

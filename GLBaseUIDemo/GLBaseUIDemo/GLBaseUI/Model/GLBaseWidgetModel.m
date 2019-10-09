@@ -121,7 +121,7 @@
 }
 
 #pragma mark - getter
-- (NSMutableArray<GLBaseViewModel *> *)headerDataList {
+- (NSMutableArray<GLCollectionReusableViewModel *> *)headerDataList {
     if (!_headerDataList) {
         GLCollectionReusableViewModel *noneDataModel = [GLCollectionReusableViewModel new];
         _headerDataList = [[NSMutableArray alloc] initWithObjects:noneDataModel, nil];
@@ -129,9 +129,9 @@
     return _headerDataList;
 }
 
-- (NSMutableArray<GLBaseViewModel *> *)footerDataList {
+- (NSMutableArray<GLCollectionReusableViewModel *> *)footerDataList {
     if (!_footerDataList) {
-        GLBaseViewModel *noneDataModel = [GLBaseViewModel new];
+        GLCollectionReusableViewModel *noneDataModel = [GLCollectionReusableViewModel new];
         _footerDataList = [[NSMutableArray alloc] initWithObjects:noneDataModel, nil];
     }
     return _footerDataList;

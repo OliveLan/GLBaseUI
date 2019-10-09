@@ -24,12 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  CollectionView cell视图模型数组
  */
-@property (nonatomic, strong) NSMutableArray<NSMutableArray<GLBaseViewModel *>*> *__nullable cellDataList;
+@property (nonatomic, strong) NSMutableArray<NSArray <GLBaseViewModel *>*> *__nullable cellDataList;
 
 /**
  CollectionView footer视图模型
  */
-@property (nonatomic, strong) NSMutableArray<GLBaseViewModel *> *__nullable footerDataList;
+@property (nonatomic, strong) NSMutableArray<GLCollectionReusableViewModel *> *__nullable footerDataList;
 
 /**
  item横向间距

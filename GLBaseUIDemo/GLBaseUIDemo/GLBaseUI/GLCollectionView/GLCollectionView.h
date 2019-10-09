@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class GLCollectionView, GLBaseViewModel, GLCollectionReusableViewModel;
+@class GLCollectionView, GLBaseViewModel, GLCollectionReusableViewModel, GLBaseWidgetModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -76,7 +76,7 @@ typedef void(^DidSelectedHeaderBlock)(NSInteger index);
 @property (nonatomic, weak) id<GLCollectionViewFlowLayoutDelegate> flowLayoutDelegate;
 @property (nonatomic, weak) id<GLCollectionViewScrollDelegate> scrollDelegate;
 
-@property (nonatomic, strong) NSMutableArray<GLBaseViewModel *> *widgets;
+@property (nonatomic, strong) NSMutableArray<GLBaseWidgetModel *> *widgets;
 @property (nonatomic, copy) DidSelectedRowBlock selectedRowBlock;
 @property (nonatomic, copy) DidSelectedHeaderBlock selectedHeaderBlock;
 

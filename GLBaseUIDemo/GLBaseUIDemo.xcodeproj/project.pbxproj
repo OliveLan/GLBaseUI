@@ -22,7 +22,6 @@
 		5121E182234CA2CF00331F49 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5121E17F234CA2CF00331F49 /* YYClassInfo.m */; };
 		5121E185234CA38D00331F49 /* GLCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5121E184234CA38D00331F49 /* GLCollectionReusableView.m */; };
 		514237D6230BA0920070D413 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 514237D5230BA0920070D413 /* AppDelegate.m */; };
-		514237D9230BA0920070D413 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 514237D8230BA0920070D413 /* ViewController.m */; };
 		514237DC230BA0920070D413 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514237DA230BA0920070D413 /* Main.storyboard */; };
 		514237DE230BA0920070D413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514237DD230BA0920070D413 /* Assets.xcassets */; };
 		514237E1230BA0920070D413 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514237DF230BA0920070D413 /* LaunchScreen.storyboard */; };
@@ -31,6 +30,16 @@
 		514237F4230BA6020070D413 /* GLBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 514237F3230BA6020070D413 /* GLBaseViewModel.m */; };
 		514237F7230BA6250070D413 /* GLBaseWidgetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 514237F6230BA6250070D413 /* GLBaseWidgetModel.m */; };
 		514237FA230BA64A0070D413 /* GLBaseWidgetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 514237F9230BA64A0070D413 /* GLBaseWidgetView.m */; };
+		514FCC9A234D8E870009A5F4 /* GLCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCC99234D8E870009A5F4 /* GLCollectionViewLayoutAttributes.m */; };
+		514FCC9D234D8F720009A5F4 /* UIView+GLExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCC9C234D8F720009A5F4 /* UIView+GLExt.m */; };
+		514FCCA0234DB3120009A5F4 /* GLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCC9F234DB3120009A5F4 /* GLCollectionViewCell.m */; };
+		514FCCA4234DC1960009A5F4 /* HomeListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCA3234DC1960009A5F4 /* HomeListViewModel.m */; };
+		514FCCA7234DC1AF0009A5F4 /* HomeListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCA6234DC1AF0009A5F4 /* HomeListCell.m */; };
+		514FCCAA234DC1D10009A5F4 /* HomeListWidgetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCA9234DC1D10009A5F4 /* HomeListWidgetModel.m */; };
+		514FCCAD234DCE4D0009A5F4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCAC234DCE4D0009A5F4 /* HomeViewController.m */; };
+		514FCCB2234DD52B0009A5F4 /* NormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCB1234DD52B0009A5F4 /* NormalViewController.m */; };
+		514FCCB5234DD7E20009A5F4 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCB4234DD7E20009A5F4 /* BaseNavigationController.m */; };
+		514FCCB8234DD8400009A5F4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCB7234DD8400009A5F4 /* BaseViewController.m */; };
 		518A198C23420BCC00B4CE7E /* GLCollectionReusableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 518A198B23420BCC00B4CE7E /* GLCollectionReusableViewModel.m */; };
 		518A198F23420EA900B4CE7E /* GLBaseHttpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 518A198E23420EA900B4CE7E /* GLBaseHttpModel.m */; };
 /* End PBXBuildFile section */
@@ -74,8 +83,6 @@
 		514237D1230BA0920070D413 /* GLBaseUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLBaseUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		514237D4230BA0920070D413 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		514237D5230BA0920070D413 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		514237D7230BA0920070D413 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		514237D8230BA0920070D413 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		514237DB230BA0920070D413 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		514237DD230BA0920070D413 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		514237E0230BA0920070D413 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +96,29 @@
 		514237F6230BA6250070D413 /* GLBaseWidgetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLBaseWidgetModel.m; sourceTree = "<group>"; };
 		514237F8230BA64A0070D413 /* GLBaseWidgetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLBaseWidgetView.h; sourceTree = "<group>"; };
 		514237F9230BA64A0070D413 /* GLBaseWidgetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLBaseWidgetView.m; sourceTree = "<group>"; };
+		514FCC98234D8E870009A5F4 /* GLCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		514FCC99234D8E870009A5F4 /* GLCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
+		514FCC9B234D8F720009A5F4 /* UIView+GLExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GLExt.h"; sourceTree = "<group>"; };
+		514FCC9C234D8F720009A5F4 /* UIView+GLExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GLExt.m"; sourceTree = "<group>"; };
+		514FCC9E234DB3120009A5F4 /* GLCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLCollectionViewCell.h; sourceTree = "<group>"; };
+		514FCC9F234DB3120009A5F4 /* GLCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLCollectionViewCell.m; sourceTree = "<group>"; };
+		514FCCA1234DBB120009A5F4 /* GLBaseUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLBaseUI.h; sourceTree = "<group>"; };
+		514FCCA2234DC1960009A5F4 /* HomeListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeListViewModel.h; sourceTree = "<group>"; };
+		514FCCA3234DC1960009A5F4 /* HomeListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeListViewModel.m; sourceTree = "<group>"; };
+		514FCCA5234DC1AF0009A5F4 /* HomeListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeListCell.h; sourceTree = "<group>"; };
+		514FCCA6234DC1AF0009A5F4 /* HomeListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeListCell.m; sourceTree = "<group>"; };
+		514FCCA8234DC1D10009A5F4 /* HomeListWidgetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeListWidgetModel.h; sourceTree = "<group>"; };
+		514FCCA9234DC1D10009A5F4 /* HomeListWidgetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeListWidgetModel.m; sourceTree = "<group>"; };
+		514FCCAB234DCE4D0009A5F4 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		514FCCAC234DCE4D0009A5F4 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		514FCCB0234DD52B0009A5F4 /* NormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalViewController.h; sourceTree = "<group>"; };
+		514FCCB1234DD52B0009A5F4 /* NormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalViewController.m; sourceTree = "<group>"; };
+		514FCCB3234DD7E20009A5F4 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		514FCCB4234DD7E20009A5F4 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		514FCCB6234DD8400009A5F4 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		514FCCB7234DD8400009A5F4 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		514FCCBA234DDA840009A5F4 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		514FCCBB234DDAA40009A5F4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		518A198A23420BCC00B4CE7E /* GLCollectionReusableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLCollectionReusableViewModel.h; sourceTree = "<group>"; };
 		518A198B23420BCC00B4CE7E /* GLCollectionReusableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLCollectionReusableViewModel.m; sourceTree = "<group>"; };
 		518A198D23420EA900B4CE7E /* GLBaseHttpModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLBaseHttpModel.h; sourceTree = "<group>"; };
@@ -106,13 +136,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5121E14F234C953300331F49 /* ThirdPath */ = {
+		5121E14F234C953300331F49 /* ThirdFile */ = {
 			isa = PBXGroup;
 			children = (
 				5121E17B234CA2CF00331F49 /* YYModel */,
 				5121E153234C96A300331F49 /* Masonry */,
 			);
-			path = ThirdPath;
+			path = ThirdFile;
 			sourceTree = "<group>";
 		};
 		5121E153234C96A300331F49 /* Masonry */ = {
@@ -151,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				5121E17A234C992200331F49 /* GlobalDefine.h */,
+				514FCC9B234D8F720009A5F4 /* UIView+GLExt.h */,
+				514FCC9C234D8F720009A5F4 /* UIView+GLExt.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -187,10 +219,16 @@
 			isa = PBXGroup;
 			children = (
 				514237EB230BA2450070D413 /* GLBaseUI */,
+				514FCCB9234DDA640009A5F4 /* Utils */,
+				514FCCAE234DD4950009A5F4 /* HomePage */,
+				514FCCAF234DD4EB0009A5F4 /* NormalList */,
+				514FCCB3234DD7E20009A5F4 /* BaseNavigationController.h */,
+				514FCCB4234DD7E20009A5F4 /* BaseNavigationController.m */,
+				514FCCB6234DD8400009A5F4 /* BaseViewController.h */,
+				514FCCB7234DD8400009A5F4 /* BaseViewController.m */,
 				514237D4230BA0920070D413 /* AppDelegate.h */,
 				514237D5230BA0920070D413 /* AppDelegate.m */,
-				514237D7230BA0920070D413 /* ViewController.h */,
-				514237D8230BA0920070D413 /* ViewController.m */,
+				514FCCBB234DDAA40009A5F4 /* PrefixHeader.pch */,
 				514237DA230BA0920070D413 /* Main.storyboard */,
 				514237DD230BA0920070D413 /* Assets.xcassets */,
 				514237DF230BA0920070D413 /* LaunchScreen.storyboard */,
@@ -203,8 +241,9 @@
 		514237EB230BA2450070D413 /* GLBaseUI */ = {
 			isa = PBXGroup;
 			children = (
+				514FCCA1234DBB120009A5F4 /* GLBaseUI.h */,
 				5121E179234C991100331F49 /* Utils */,
-				5121E14F234C953300331F49 /* ThirdPath */,
+				5121E14F234C953300331F49 /* ThirdFile */,
 				514237ED230BA2450070D413 /* GLCollectionView */,
 				514237EC230BA2450070D413 /* Model */,
 				514237EE230BA2450070D413 /* GLWidgetView */,
@@ -232,10 +271,14 @@
 			children = (
 				514237EF230BA28F0070D413 /* GLCollectionView.h */,
 				514237F0230BA28F0070D413 /* GLCollectionView.m */,
+				514FCC9E234DB3120009A5F4 /* GLCollectionViewCell.h */,
+				514FCC9F234DB3120009A5F4 /* GLCollectionViewCell.m */,
 				5121E150234C95D000331F49 /* GLCollectionViewFlowLayout.h */,
 				5121E151234C95D000331F49 /* GLCollectionViewFlowLayout.m */,
 				5121E183234CA38D00331F49 /* GLCollectionReusableView.h */,
 				5121E184234CA38D00331F49 /* GLCollectionReusableView.m */,
+				514FCC98234D8E870009A5F4 /* GLCollectionViewLayoutAttributes.h */,
+				514FCC99234D8E870009A5F4 /* GLCollectionViewLayoutAttributes.m */,
 			);
 			path = GLCollectionView;
 			sourceTree = "<group>";
@@ -247,6 +290,38 @@
 				514237F9230BA64A0070D413 /* GLBaseWidgetView.m */,
 			);
 			path = GLWidgetView;
+			sourceTree = "<group>";
+		};
+		514FCCAE234DD4950009A5F4 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				514FCCAB234DCE4D0009A5F4 /* HomeViewController.h */,
+				514FCCAC234DCE4D0009A5F4 /* HomeViewController.m */,
+				514FCCA8234DC1D10009A5F4 /* HomeListWidgetModel.h */,
+				514FCCA9234DC1D10009A5F4 /* HomeListWidgetModel.m */,
+				514FCCA2234DC1960009A5F4 /* HomeListViewModel.h */,
+				514FCCA3234DC1960009A5F4 /* HomeListViewModel.m */,
+				514FCCA5234DC1AF0009A5F4 /* HomeListCell.h */,
+				514FCCA6234DC1AF0009A5F4 /* HomeListCell.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		514FCCAF234DD4EB0009A5F4 /* NormalList */ = {
+			isa = PBXGroup;
+			children = (
+				514FCCB0234DD52B0009A5F4 /* NormalViewController.h */,
+				514FCCB1234DD52B0009A5F4 /* NormalViewController.m */,
+			);
+			path = NormalList;
+			sourceTree = "<group>";
+		};
+		514FCCB9234DDA640009A5F4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				514FCCBA234DDA840009A5F4 /* Constant.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,18 +394,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514FCCB5234DD7E20009A5F4 /* BaseNavigationController.m in Sources */,
+				514FCCAA234DC1D10009A5F4 /* HomeListWidgetModel.m in Sources */,
 				5121E16E234C96A300331F49 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				5121E185234CA38D00331F49 /* GLCollectionReusableView.m in Sources */,
 				518A198F23420EA900B4CE7E /* GLBaseHttpModel.m in Sources */,
 				5121E175234C96A300331F49 /* MASConstraint.m in Sources */,
 				5121E176234C96A300331F49 /* MASViewConstraint.m in Sources */,
 				5121E16F234C96A300331F49 /* ViewController+MASAdditions.m in Sources */,
+				514FCCA4234DC1960009A5F4 /* HomeListViewModel.m in Sources */,
+				514FCCB8234DD8400009A5F4 /* BaseViewController.m in Sources */,
 				5121E177234C96A300331F49 /* MASViewAttribute.m in Sources */,
 				518A198C23420BCC00B4CE7E /* GLCollectionReusableViewModel.m in Sources */,
 				5121E170234C96A300331F49 /* MASCompositeConstraint.m in Sources */,
+				514FCCA7234DC1AF0009A5F4 /* HomeListCell.m in Sources */,
 				5121E174234C96A300331F49 /* View+MASAdditions.m in Sources */,
 				5121E181234CA2CF00331F49 /* NSObject+YYModel.m in Sources */,
-				514237D9230BA0920070D413 /* ViewController.m in Sources */,
+				514FCC9A234D8E870009A5F4 /* GLCollectionViewLayoutAttributes.m in Sources */,
 				514237F7230BA6250070D413 /* GLBaseWidgetModel.m in Sources */,
 				5121E182234CA2CF00331F49 /* YYClassInfo.m in Sources */,
 				5121E172234C96A300331F49 /* MASLayoutConstraint.m in Sources */,
@@ -338,9 +418,13 @@
 				514237E4230BA0920070D413 /* main.m in Sources */,
 				514237D6230BA0920070D413 /* AppDelegate.m in Sources */,
 				514237FA230BA64A0070D413 /* GLBaseWidgetView.m in Sources */,
+				514FCCAD234DCE4D0009A5F4 /* HomeViewController.m in Sources */,
+				514FCCB2234DD52B0009A5F4 /* NormalViewController.m in Sources */,
 				5121E173234C96A300331F49 /* NSArray+MASAdditions.m in Sources */,
+				514FCCA0234DB3120009A5F4 /* GLCollectionViewCell.m in Sources */,
 				5121E152234C95D000331F49 /* GLCollectionViewFlowLayout.m in Sources */,
 				514237F4230BA6020070D413 /* GLBaseViewModel.m in Sources */,
+				514FCC9D234D8F720009A5F4 /* UIView+GLExt.m in Sources */,
 				514237F1230BA28F0070D413 /* GLCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +569,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U8VP94E9PV;
+				GCC_PREFIX_HEADER = GLBaseUIDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = GLBaseUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -502,6 +587,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U8VP94E9PV;
+				GCC_PREFIX_HEADER = GLBaseUIDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = GLBaseUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
