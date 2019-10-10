@@ -27,7 +27,7 @@
     [self.baseView addWidgets:@[self.listWidgetModel]];
 }
 
-#pragma mark - setter
+#pragma mark - getter
 - (GLBaseWidgetView *)baseView {
     if (!_baseView) {
         _baseView = [[GLBaseWidgetView alloc] init];

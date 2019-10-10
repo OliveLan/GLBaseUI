@@ -73,6 +73,16 @@ typedef void(^GLReqFailure)( id error);
  */
 - (void)request;
 
+/**
+ 请求成功后需调用该方法
+ */
+- (void)requestSuccess:(id)result;
+
+/**
+ 请求失败后需调用该方法
+ */
+- (void)requestFailure:(id)error;
+
 @end
 
 NS_ASSUME_NONNULL_END

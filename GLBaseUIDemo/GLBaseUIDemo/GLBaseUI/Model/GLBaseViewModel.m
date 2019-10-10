@@ -10,7 +10,7 @@
 
 @interface GLBaseViewModel ()
 
-@property(nonatomic, copy) NSString *defaultReuseIdentifier;
+@property (nonatomic, copy) NSString *defaultReuseIdentifier;
 
 @end
 

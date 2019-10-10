@@ -9,7 +9,7 @@
 #ifndef GLBaseUI_h
 #define GLBaseUI_h
 
-#import "GlobalDefine.h"
+#import "GLGlobalDefine.h"
 #import "UIView+GLExt.h"
 #import "GLCollectionView.h"
 #import "GLCollectionViewCell.h"

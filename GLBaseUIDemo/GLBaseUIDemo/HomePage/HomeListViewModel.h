@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HomeListViewModel : GLBaseViewModel
 
 @property (nonatomic, strong) NSString *titleStr;
+@property (nonatomic, strong) NSString *imgName;
+@property (nonatomic, strong) NSString *content;
 
 @end
 

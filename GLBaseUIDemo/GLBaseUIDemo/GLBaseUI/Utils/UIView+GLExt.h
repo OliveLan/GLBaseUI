@@ -11,9 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (GLExt)
 
-/**
- 刷新布局
- */
 - (void)refreshLayout;
 
 - (CGSize)getLayoutSize;
@@ -27,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setHeight:(CGFloat)height;
 
 - (void)constraintWithEdgeZero;
+
+- (CGFloat)bottom;
 
 @end
 

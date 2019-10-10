@@ -12,7 +12,7 @@
 #import "GLCollectionViewFlowLayout.h"
 #import "GLBaseWidgetModel.h"
 #import "GLBaseHttpModel.h"
-#import "GlobalDefine.h"
+#import "GLGlobalDefine.h"
 #import "GLCollectionReusableViewModel.h"
 #import "UIView+GLExt.h"
 //#import "GLRefreshHeader.h"

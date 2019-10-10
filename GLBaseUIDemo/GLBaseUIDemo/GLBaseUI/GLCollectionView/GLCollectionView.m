@@ -8,7 +8,7 @@
 
 #import "GLCollectionView.h"
 #import "GLCollectionViewFlowLayout.h"
-#import "GlobalDefine.h"
+#import "GLGlobalDefine.h"
 #import "GLCollectionReusableView.h"
 #import "GLCollectionViewCell.h"
 #import "GLBaseViewModel.h"
@@ -423,7 +423,7 @@
                     viewModel.height = size.height;
                 }
             }
-            if (viewModel.height == 0 || viewModel.width == 0) {
+            if (viewModel.height < 0.01 || viewModel.width < 0.01) {
                 GLCollectionReusableView * cacheHeader = [self getCacheHeaderWithReuseIdentifier:[viewModel reuseIdentifier]];
                 
                 if (cacheHeader.baseViewModel.height > 0 && cacheHeader.baseViewModel.width > 0) {

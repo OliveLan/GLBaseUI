@@ -20,4 +20,21 @@
     
 }
 
+- (void)requestSuccess:(id)result {
+    if (_requestType == REQUEST_TYPE_OTHER) {
+        return;
+    }
+    _requestStatus = REQUEST_STATUS_SUCCESS;
+    if (_requestSuccessBlock) {
+        _requestSuccessBlock(result);
+    }
+}
+
+- (void)requestFailure:(id)error {
+    _requestStatus = REQUEST_STATUS_FAIL;
+    if (_requestErrorBlock) {
+        _requestErrorBlock(error);
+    }
+}
+
 @end

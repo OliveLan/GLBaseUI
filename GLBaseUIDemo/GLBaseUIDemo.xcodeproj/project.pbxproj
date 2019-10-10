@@ -46,6 +46,8 @@
 		514FCCC7234DE8500009A5F4 /* NormalListHttpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FCCC6234DE8500009A5F4 /* NormalListHttpModel.m */; };
 		518A198C23420BCC00B4CE7E /* GLCollectionReusableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 518A198B23420BCC00B4CE7E /* GLCollectionReusableViewModel.m */; };
 		518A198F23420EA900B4CE7E /* GLBaseHttpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 518A198E23420EA900B4CE7E /* GLBaseHttpModel.m */; };
+		51924B94234EDF5E00307318 /* NormalRausableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51924B93234EDF5E00307318 /* NormalRausableView.m */; };
+		51924B97234F042300307318 /* NormalReusableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51924B96234F042300307318 /* NormalReusableViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,7 +78,7 @@
 		5121E16A234C96A300331F49 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		5121E16B234C96A300331F49 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		5121E16C234C96A300331F49 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		5121E17A234C992200331F49 /* GlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		5121E17A234C992200331F49 /* GLGlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLGlobalDefine.h; sourceTree = "<group>"; };
 		5121E17C234CA2CF00331F49 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		5121E17D234CA2CF00331F49 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		5121E17E234CA2CF00331F49 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
@@ -135,6 +137,10 @@
 		518A198B23420BCC00B4CE7E /* GLCollectionReusableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLCollectionReusableViewModel.m; sourceTree = "<group>"; };
 		518A198D23420EA900B4CE7E /* GLBaseHttpModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLBaseHttpModel.h; sourceTree = "<group>"; };
 		518A198E23420EA900B4CE7E /* GLBaseHttpModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLBaseHttpModel.m; sourceTree = "<group>"; };
+		51924B92234EDF5E00307318 /* NormalRausableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalRausableView.h; sourceTree = "<group>"; };
+		51924B93234EDF5E00307318 /* NormalRausableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalRausableView.m; sourceTree = "<group>"; };
+		51924B95234F042300307318 /* NormalReusableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalReusableViewModel.h; sourceTree = "<group>"; };
+		51924B96234F042300307318 /* NormalReusableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalReusableViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +198,7 @@
 		5121E179234C991100331F49 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				5121E17A234C992200331F49 /* GlobalDefine.h */,
+				5121E17A234C992200331F49 /* GLGlobalDefine.h */,
 				514FCC9B234D8F720009A5F4 /* UIView+GLExt.h */,
 				514FCC9C234D8F720009A5F4 /* UIView+GLExt.m */,
 			);
@@ -332,6 +338,10 @@
 				514FCCC3234DE4710009A5F4 /* NormalListCell.m */,
 				514FCCC5234DE8500009A5F4 /* NormalListHttpModel.h */,
 				514FCCC6234DE8500009A5F4 /* NormalListHttpModel.m */,
+				51924B92234EDF5E00307318 /* NormalRausableView.h */,
+				51924B93234EDF5E00307318 /* NormalRausableView.m */,
+				51924B95234F042300307318 /* NormalReusableViewModel.h */,
+				51924B96234F042300307318 /* NormalReusableViewModel.m */,
 			);
 			path = NormalList;
 			sourceTree = "<group>";
@@ -430,6 +440,7 @@
 				5121E170234C96A300331F49 /* MASCompositeConstraint.m in Sources */,
 				514FCCA7234DC1AF0009A5F4 /* HomeListCell.m in Sources */,
 				5121E174234C96A300331F49 /* View+MASAdditions.m in Sources */,
+				51924B97234F042300307318 /* NormalReusableViewModel.m in Sources */,
 				5121E181234CA2CF00331F49 /* NSObject+YYModel.m in Sources */,
 				514FCC9A234D8E870009A5F4 /* GLCollectionViewLayoutAttributes.m in Sources */,
 				514237F7230BA6250070D413 /* GLBaseWidgetModel.m in Sources */,
@@ -446,6 +457,7 @@
 				514FCCB2234DD52B0009A5F4 /* NormalViewController.m in Sources */,
 				5121E173234C96A300331F49 /* NSArray+MASAdditions.m in Sources */,
 				514FCCA0234DB3120009A5F4 /* GLCollectionViewCell.m in Sources */,
+				51924B94234EDF5E00307318 /* NormalRausableView.m in Sources */,
 				5121E152234C95D000331F49 /* GLCollectionViewFlowLayout.m in Sources */,
 				514237F4230BA6020070D413 /* GLBaseViewModel.m in Sources */,
 				514FCC9D234D8F720009A5F4 /* UIView+GLExt.m in Sources */,

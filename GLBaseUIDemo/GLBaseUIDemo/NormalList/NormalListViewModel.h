@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NormalListViewModel : GLBaseViewModel
 
-@property (nonatomic, strong) NSString *imgUrl;
+@property (nonatomic, strong) NSString *imgName;
 @property (nonatomic, strong) NSString *novelTitle;
 @property (nonatomic, strong) NSString *nickname;
 @property (nonatomic, strong) NSString *content;

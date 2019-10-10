@@ -9,7 +9,7 @@
 #import "GLBaseWidgetModel.h"
 #import "GLBaseWidgetView.h"
 #import "GLBaseHttpModel.h"
-#import "GlobalDefine.h"
+#import "GLGlobalDefine.h"
 #import "GLBaseViewModel.h"
 #import "YYModel.h"
 #import "GLCollectionReusableViewModel.h"

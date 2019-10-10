@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) UICollectionView *collectionView;
 @property (nonatomic, weak) GLBaseWidgetModel *baseWidget;
 
-@property(strong, nonatomic) NSString *randomReuseIdentifier;   // 随机生成的复用标志 当reuseEnable为false时候自动生成
+@property(strong, nonatomic) NSString *randomReuseIdentifier;
 
 /**
  由子类重写

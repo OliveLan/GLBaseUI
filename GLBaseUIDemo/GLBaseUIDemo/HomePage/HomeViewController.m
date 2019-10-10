@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setTitleViewWithTitle:@"Home"];
+    [self setTitleViewWithTitle:@"GLBaseUI"];
     
     /** 第一步 将视图添加到当前控制器 */
     [self.view addSubview:self.baseView];
@@ -32,7 +32,7 @@
     [self.baseView addWidgets:@[self.widgetModel]];
 }
 
-#pragma mark - setter
+#pragma mark - getter
 - (GLBaseWidgetView *)baseView {
     if (!_baseView) {
         _baseView = [[GLBaseWidgetView alloc] init];
@@ -61,10 +61,16 @@
     if (!_listDataArr) {
         _listDataArr = [NSMutableArray array];
         
-        NSArray *cellTitleArr = @[@"普通列表（带header、footer）", @"多样式列表", @"横向列表"];
-        for (NSString *title in cellTitleArr) {
+        NSArray *cellTitleArr = @[@"示例一：普通列表", @"示例二：多样式列表", @"示例三：横向卡片列表"];
+        NSArray *imageArr = @[@"home_bg1", @"home_bg2", @"home_bg3"];
+        NSArray *contentArr = @[@"该示例为同一种cell的普通列表，带header和footer，同时模拟了数据请求回调后的自动绑定",
+                                @"多section、多种类型cell的混排，同时也包含cell中再次嵌套横向列表",
+                                @""];
+        for (int i = 0; i< cellTitleArr.count; i++) {
             HomeListViewModel *viewModel = [HomeListViewModel new];
-            viewModel.titleStr = title;
+            viewModel.titleStr = cellTitleArr[i];
+            viewModel.imgName = imageArr[i];
+            viewModel.content = contentArr[i];
             [_listDataArr addObject:viewModel];
         }
     }
