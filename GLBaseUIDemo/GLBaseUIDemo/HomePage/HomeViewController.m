@@ -10,6 +10,7 @@
 #import "HomeListWidgetModel.h"
 #import "HomeListViewModel.h"
 #import "NormalViewController.h"
+#import "MultipleListViewController.h"
 
 @interface HomeViewController ()
 
@@ -44,6 +45,9 @@
             if (indexPath.row == 0) {
                 NormalViewController *normalVC = [NormalViewController new];
                 [weakself.navigationController pushViewController:normalVC animated:YES];
+            } else if (indexPath.row == 1) {
+                MultipleListViewController *multipleVC = [MultipleListViewController new];
+                [weakself.navigationController pushViewController:multipleVC animated:YES];
             }
         };
     }
@@ -64,7 +68,7 @@
         NSArray *cellTitleArr = @[@"示例一：普通列表", @"示例二：多样式列表", @"示例三：横向卡片列表"];
         NSArray *imageArr = @[@"home_bg1", @"home_bg2", @"home_bg3"];
         NSArray *contentArr = @[@"该示例为同一种cell的普通列表，带header和footer，同时模拟了数据请求回调后的自动绑定",
-                                @"多section、多种类型cell的混排，同时也包含cell中再次嵌套横向列表",
+                                @"多section、多种类型cell的混排",
                                 @""];
         for (int i = 0; i< cellTitleArr.count; i++) {
             HomeListViewModel *viewModel = [HomeListViewModel new];

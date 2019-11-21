@@ -25,7 +25,7 @@
 /** 模拟请求列表数据，实际使用中可在网络请求基类中实现 */
 - (void)requestListDataSuccess:(GLReqSuccess)success fail:(GLReqFailure)fail {
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             // 请求得到的列表数据
             NSArray *list = @[@{@"imgName": @"novelImg1", @"novelTitle": @"iOS开发从入门到放弃", @"nickname": @"Olive", @"content": @"是时候展现真正的技术了！！"},
                               @{@"imgName": @"novelImg2", @"novelTitle": @"前端开发菜鸟课程", @"nickname": @"Olive", @"content": @"菜鸟教菜鸟让你变得更菜鸟"},
